@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testCases.Matrixflow">
+        <methods>
+          <include name="OperationtmAssign"/>
+          <include name="tearDown"/>
+          <include name="publishCase"/>
+          <include name="aasignToDE"/>
+          <include name="beforeSuit"/>
+          <include name="caseregistration"/>
+          <include name="start"/>
+          <include name="Login"/>
+          <include name="Operationtm"/>
+          <include name="Report"/>
+          <include name="dataentry"/>
+          <include name="assigncase"/>
+          <include name="teardown"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.Matrixflow -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

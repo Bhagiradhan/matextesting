@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="7" failed="1" total="9" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56883" started-at="2019-01-04T13:39:22Z" finished-at="2019-01-04T13:40:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56883" started-at="2019-01-04T13:39:22Z" finished-at="2019-01-04T13:40:19Z">
+      <class name="testCases.Matrixflow">
+        <test-method status="PASS" signature="beforeSuit()[pri:0, instance:testCases.Matrixflow@8931cf]" name="beforeSuit" is-config="true" duration-ms="704" started-at="2019-01-04T19:09:22Z" finished-at="2019-01-04T19:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method status="PASS" signature="start()[pri:0, instance:testCases.Matrixflow@8931cf]" name="start" is-config="true" duration-ms="19030" started-at="2019-01-04T19:09:23Z" finished-at="2019-01-04T19:09:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:testCases.Matrixflow@8931cf]" name="setup" is-config="true" duration-ms="42" started-at="2019-01-04T19:09:42Z" finished-at="2019-01-04T19:09:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.Matrixflow.Login() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:testCases.Matrixflow@8931cf]" name="Login" duration-ms="20425" started-at="2019-01-04T19:09:42Z" finished-at="2019-01-04T19:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testCases.Matrixflow@8931cf]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-04T19:10:02Z" finished-at="2019-01-04T19:10:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Matrixflow.Login()[pri:0, instance:testCases.Matrixflow@8931cf] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.Matrixflow.Login() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="caseregistration()[pri:0, instance:testCases.Matrixflow@8931cf]" name="caseregistration" duration-ms="15453" started-at="2019-01-04T19:10:02Z" depends-on-methods="testCases.Matrixflow.Login" finished-at="2019-01-04T19:10:18Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: ok (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: ok (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at pages.Caseregistration.caseRegistration(Caseregistration.java:60)
+	at testCases.Matrixflow.caseregistration(Matrixflow.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: ok
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KAD-I-024', ip: '192.168.2.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseregistration -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:testCases.Matrixflow@8931cf]" name="setup" is-config="true" duration-ms="0" started-at="2019-01-04T19:10:02Z" finished-at="2019-01-04T19:10:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.Matrixflow.caseregistration() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testCases.Matrixflow@8931cf]" name="tearDown" is-config="true" duration-ms="326" started-at="2019-01-04T19:10:19Z" finished-at="2019-01-04T19:10:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=caseregistration status=FAILURE method=Matrixflow.caseregistration()[pri:0, instance:testCases.Matrixflow@8931cf] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.Matrixflow.caseregistration() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="aasignToDE()[pri:0, instance:testCases.Matrixflow@8931cf]" name="aasignToDE" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.caseregistration" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aasignToDE -->
+        <test-method status="SKIP" signature="dataentry()[pri:0, instance:testCases.Matrixflow@8931cf]" name="dataentry" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.aasignToDE" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataentry -->
+        <test-method status="SKIP" signature="assigncase()[pri:0, instance:testCases.Matrixflow@8931cf]" name="assigncase" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.dataentry" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assigncase -->
+        <test-method status="SKIP" signature="OperationtmAssign()[pri:0, instance:testCases.Matrixflow@8931cf]" name="OperationtmAssign" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.assigncase" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OperationtmAssign -->
+        <test-method status="SKIP" signature="Operationtm()[pri:0, instance:testCases.Matrixflow@8931cf]" name="Operationtm" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.OperationtmAssign" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Operationtm -->
+        <test-method status="SKIP" signature="Report()[pri:0, instance:testCases.Matrixflow@8931cf]" name="Report" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.Operationtm" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report -->
+        <test-method status="SKIP" signature="publishCase()[pri:0, instance:testCases.Matrixflow@8931cf]" name="publishCase" duration-ms="0" started-at="2019-01-04T19:10:19Z" depends-on-methods="testCases.Matrixflow.Report" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishCase -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.Matrixflow@8931cf]" name="teardown" is-config="true" duration-ms="0" started-at="2019-01-04T19:10:19Z" finished-at="2019-01-04T19:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="FAIL" signature="afterSuite()[pri:0, instance:testCases.Matrixflow@8931cf]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-01-04T19:10:20Z" finished-at="2019-01-04T19:10:20Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.mail.MessagingException: IOException while sending message;
+  nested exception is:
+	java.io.FileNotFoundException: D:\gopi\git\matextesting\Reports\matex.html (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: javax.mail.MessagingException: IOException while sending message;
+  nested exception is:
+	java.io.FileNotFoundException: D:\gopi\git\matextesting\Reports\matex.html (The system cannot find the path specified)
+	at environment.SendAttachmentInEmail.sendhtmlemail(SendAttachmentInEmail.java:99)
+	at testCases.Matrixflow.afterSuite(Matrixflow.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.mail.MessagingException: IOException while sending message;
+  nested exception is:
+	java.io.FileNotFoundException: D:\gopi\git\matextesting\Reports\matex.html (The system cannot find the path specified)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1167)
+	at javax.mail.Transport.send0(Transport.java:195)
+	at javax.mail.Transport.send(Transport.java:124)
+	at environment.SendAttachmentInEmail.sendhtmlemail(SendAttachmentInEmail.java:92)
+	... 19 more
+Caused by: java.io.FileNotFoundException: D:\gopi\git\matextesting\Reports\matex.html (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at javax.activation.FileDataSource.getInputStream(Unknown Source)
+	at javax.activation.DataHandler.writeTo(Unknown Source)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1485)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:865)
+	at javax.mail.internet.MimeMultipart.writeTo(MimeMultipart.java:462)
+	at com.sun.mail.handlers.multipart_mixed.writeTo(multipart_mixed.java:103)
+	at javax.activation.ObjectDataContentHandler.writeTo(Unknown Source)
+	at javax.activation.DataHandler.writeTo(Unknown Source)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1485)
+	at javax.mail.internet.MimeMessage.writeTo(MimeMessage.java:1773)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1119)
+	... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCases.Matrixflow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
